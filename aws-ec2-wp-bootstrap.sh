@@ -1,4 +1,10 @@
-#!/bin/bash                                                                     
+#!/bin/bash
+
+# get admin
+sudo su
+
+yum update
+yum upgrade
 yum install httpd php php-mysql -y
 cd /var/www/html
 wget https://wordpress.org/wordpress-5.1.1.tar.gz
